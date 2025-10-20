@@ -45,6 +45,15 @@
     border-radius: 10px;        /* Bordes suaves (opcional) */
 }
 
+.package-item {
+    transition: all 0.3s ease;
+    border-radius: 15px;
+}
+.package-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
 </style>
 
 
@@ -120,7 +129,7 @@
                             <div class="dropdown-menu border-0 rounded-0 m-0">
                                 <a href="blog.html" class="dropdown-item">Blog Grid</a>
                                 
-                                <a href="destination.html" class="dropdown-item">Destination</a>
+                                
                             </div>
                         </div>
                         <a href="contact.html" class="nav-item nav-link">Conacto</a>
@@ -172,57 +181,73 @@
     <!-- Carousel End -->
 
 
-    <!-- Booking Start -->
-    <div class="container-fluid booking mt-5 pb-5">
-        <div class="container pb-5">
-            <div class="bg-light shadow" style="padding: 30px;">
-                <div class="row align-items-center" style="min-height: 60px;">
-                    <div class="col-md-10">
-                        <div class="row">
-                            <div class="col-md-3">
-                                <div class="mb-3 mb-md-0">
-                                    <select class="custom-select px-4" style="height: 47px;">
-                                        <option selected>Destination</option>
-                                        <option value="1">Destination 1</option>
-                                        <option value="2">Destination 1</option>
-                                        <option value="3">Destination 1</option>
-                                    </select>
-                                </div>
+<!-- Booking Start -->
+<div class="container-fluid booking mt-5 pb-5">
+    <div class="container pb-5">
+        <div class="bg-light shadow rounded-3" style="padding: 30px;">
+            <div class="row align-items-center">
+                <div class="col-md-10">
+                    <div class="row">
+                        <!-- Destino -->
+                        <div class="col-md-3">
+                            <div class="mb-3 mb-md-0">
+                                <select class="custom-select px-4" style="height: 47px;">
+                                    <option selected>Destino</option>
+                                    <option value="1">Mirador de Taquiscancha</option>
+                                    <option value="2">Cañón de Shujto</option>
+                                    <option value="3">Virgen de Sapallanga</option>
+                                    <option value="4">Catarata Huamanguaci</option>
+                                    <option value="5">Carhuapacha</option>
+                                    <option value="6">Caverna de Wallicoto</option>
+                                    <option value="7">Catarata Canta Gallo</option>
+                                    <option value="8">Cullpa Alta - Cara de Hombre</option>
+                                </select>
                             </div>
-                            <div class="col-md-3">
-                                <div class="mb-3 mb-md-0">
-                                    <div class="date" id="date1" data-target-input="nearest">
-                                        <input type="text" class="form-control p-4 datetimepicker-input" placeholder="Depart Date" data-target="#date1" data-toggle="datetimepicker"/>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="mb-3 mb-md-0">
-                                    <div class="date" id="date2" data-target-input="nearest">
-                                        <input type="text" class="form-control p-4 datetimepicker-input" placeholder="Return Date" data-target="#date2" data-toggle="datetimepicker"/>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="mb-3 mb-md-0">
-                                    <select class="custom-select px-4" style="height: 47px;">
-                                        <option selected>Duration</option>
-                                        <option value="1">Duration 1</option>
-                                        <option value="2">Duration 1</option>
-                                        <option value="3">Duration 1</option>
-                                    </select>
+                        </div>
+
+                        <!-- Fecha de salida -->
+                        <div class="col-md-3">
+                            <div class="mb-3 mb-md-0">
+                                <div class="date" id="date1" data-target-input="nearest">
+                                    <input type="text" class="form-control p-4 datetimepicker-input" placeholder="Fecha de salida" data-target="#date1" data-toggle="datetimepicker" />
                                 </div>
                             </div>
                         </div>
+
+                        <!-- Fecha de retorno -->
+                        <div class="col-md-3">
+                            <div class="mb-3 mb-md-0">
+                                <div class="date" id="date2" data-target-input="nearest">
+                                    <input type="text" class="form-control p-4 datetimepicker-input" placeholder="Fecha de retorno" data-target="#date2" data-toggle="datetimepicker" />
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Duración -->
+                        <div class="col-md-3">
+                            <div class="mb-3 mb-md-0">
+                                <select class="custom-select px-4" style="height: 47px;">
+                                    <option selected>Duración</option>
+                                    <option value="1">Medio día</option>
+                                    <option value="2">1 día</option>
+                                    <option value="3">2 días</option>
+                                </select>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-md-2">
-                        <button class="btn btn-primary btn-block" type="submit" style="height: 47px; margin-top: -2px;">Submit</button>
-                    </div>
+                </div>
+
+                <!-- Botón -->
+                <div class="col-md-2 mt-3 mt-md-0">
+                    <button class="btn btn-primary btn-block" type="submit" style="height: 47px;">
+                        Buscar
+                    </button>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Booking End -->
+</div>
+<!-- Booking End -->
 
 
     <!-- About Start -->
@@ -404,147 +429,175 @@
 
 <!-- Packages Start -->
 <div class="container-fluid py-5">
-    <div class="container pt-5 pb-3">
-        <div class="text-center mb-3 pb-3">
-            <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Paquetes</h6>
-            <h1>Descubre los Mejores Destinos de Huancayo</h1>
-        </div>
-        <div class="row">
-            <!-- Paquete 1 -->
-            <div class="col-lg-4 col-md-6 mb-4">
-                <div class="package-item bg-white mb-2">
-                    <img class="img-fluid" src="img2/torre torre.jpg" alt="">
-                    <div class="p-4">
-                        <div class="d-flex justify-content-between mb-3">
-                            <small><i class="fa fa-map-marker-alt text-primary mr-2"></i>Torre Torre</small>
-                            <small><i class="fa fa-calendar-alt text-primary mr-2"></i>1 día</small>
-                            <small><i class="fa fa-user text-primary mr-2"></i>4 personas</small>
-                        </div>
-                        <a class="h5 text-decoration-none" href="#">Explora las torres naturales y disfruta una vista única.</a>
-                        <div class="border-top mt-4 pt-3 d-flex justify-content-between align-items-center">
-                            <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.8 <small>(180)</small></h6>
-                            <h5 class="m-0">S/120</h5>
-                        </div>
-                        <div class="text-center mt-3">
-                            <a href="#" class="btn btn-primary px-4">Reservar</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Paquete 2 -->
-            <div class="col-lg-4 col-md-6 mb-4">
-                <div class="package-item bg-white mb-2">
-                    <img class="img-fluid" src="img2/ingenio.jpg" alt="">
-                    <div class="p-4">
-                        <div class="d-flex justify-content-between mb-3">
-                            <small><i class="fa fa-map-marker-alt text-primary mr-2"></i>Ingenio</small>
-                            <small><i class="fa fa-calendar-alt text-primary mr-2"></i>Medio día</small>
-                            <small><i class="fa fa-user text-primary mr-2"></i>2 personas</small>
-                        </div>
-                        <a class="h5 text-decoration-none" href="#">Visita el criadero de truchas y disfruta su sabor único.</a>
-                        <div class="border-top mt-4 pt-3 d-flex justify-content-between align-items-center">
-                            <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.6 <small>(210)</small></h6>
-                            <h5 class="m-0">S/90</h5>
-                        </div>
-                        <div class="text-center mt-3">
-                            <a href="#" class="btn btn-primary px-4">Reservar</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Paquete 3 -->
-            <div class="col-lg-4 col-md-6 mb-4">
-                <div class="package-item bg-white mb-2">
-                    <img class="img-fluid" src="img2/wariwillka.png" alt="">
-                    <div class="p-4">
-                        <div class="d-flex justify-content-between mb-3">
-                            <small><i class="fa fa-map-marker-alt text-primary mr-2"></i>Warivilca</small>
-                            <small><i class="fa fa-calendar-alt text-primary mr-2"></i>1 día</small>
-                            <small><i class="fa fa-user text-primary mr-2"></i>3 personas</small>
-                        </div>
-                        <a class="h5 text-decoration-none" href="#">Conoce el santuario y la historia huanca.</a>
-                        <div class="border-top mt-4 pt-3 d-flex justify-content-between align-items-center">
-                            <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.7 <small>(165)</small></h6>
-                            <h5 class="m-0">S/100</h5>
-                        </div>
-                        <div class="text-center mt-3">
-                            <a href="#" class="btn btn-primary px-4">Reservar</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Paquete 4 -->
-            <div class="col-lg-4 col-md-6 mb-4">
-                <div class="package-item bg-white mb-2">
-                    <img class="img-fluid" src="img2/cochaschico.jpg" alt="">
-                    <div class="p-4">
-                        <div class="d-flex justify-content-between mb-3">
-                            <small><i class="fa fa-map-marker-alt text-primary mr-2"></i>Cochas Chico</small>
-                            <small><i class="fa fa-calendar-alt text-primary mr-2"></i>Medio día</small>
-                            <small><i class="fa fa-user text-primary mr-2"></i>2 personas</small>
-                        </div>
-                        <a class="h5 text-decoration-none" href="#">Descubre el arte del mate burilado y su tradición viva.</a>
-                        <div class="border-top mt-4 pt-3 d-flex justify-content-between align-items-center">
-                            <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.9 <small>(320)</small></h6>
-                            <h5 class="m-0">S/80</h5>
-                        </div>
-                        <div class="text-center mt-3">
-                            <a href="#" class="btn btn-primary px-4">Reservar</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Paquete 5 -->
-            <div class="col-lg-4 col-md-6 mb-4">
-                <div class="package-item bg-white mb-2">
-                    <img class="img-fluid" src="img2/viques.jpg" alt="">
-                    <div class="p-4">
-                        <div class="d-flex justify-content-between mb-3">
-                            <small><i class="fa fa-map-marker-alt text-primary mr-2"></i>Viques</small>
-                            <small><i class="fa fa-calendar-alt text-primary mr-2"></i>1 día</small>
-                            <small><i class="fa fa-user text-primary mr-2"></i>5 personas</small>
-                        </div>
-                        <a class="h5 text-decoration-none" href="#">Relájate en las aguas termales y la naturaleza.</a>
-                        <div class="border-top mt-4 pt-3 d-flex justify-content-between align-items-center">
-                            <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.8 <small>(190)</small></h6>
-                            <h5 class="m-0">S/110</h5>
-                        </div>
-                        <div class="text-center mt-3">
-                            <a href="#" class="btn btn-primary px-4">Reservar</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Paquete 6 -->
-            <div class="col-lg-4 col-md-6 mb-4">
-                <div class="package-item bg-white mb-2">
-                    <img class="img-fluid" src="img2/huaytapallana.jpg" alt="">
-                    <div class="p-4">
-                        <div class="d-flex justify-content-between mb-3">
-                            <small><i class="fa fa-map-marker-alt text-primary mr-2"></i>Huaytapallana</small>
-                            <small><i class="fa fa-calendar-alt text-primary mr-2"></i>1 día</small>
-                            <small><i class="fa fa-user text-primary mr-2"></i>6 personas</small>
-                        </div>
-                        <a class="h5 text-decoration-none" href="#">Asciende al nevado y contempla paisajes.</a>
-                        <div class="border-top mt-4 pt-3 d-flex justify-content-between align-items-center">
-                            <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>5.0 <small>(420)</small></h6>
-                            <h5 class="m-0">S/150</h5>
-                        </div>
-                        <div class="text-center mt-3">
-                            <a href="#" class="btn btn-primary px-4">Reservar</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+  <div class="container pt-5 pb-3">
+    <div class="text-center mb-3 pb-3">
+      <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Paquetes</h6>
+      <h1>Descubre Rincones Ocultos de Huancayo</h1>
     </div>
+
+    <div class="row">
+      <!-- 1. Mirador de Taquiscancha -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="package-item bg-white shadow-sm h-100 d-flex flex-column justify-content-between rounded-3 overflow-hidden">
+          <img class="img-fluid" src="img2/Mirador.jpg" alt="Mirador de Taquiscancha" style="height: 220px; object-fit: cover;">
+          <div class="p-4 flex-grow-1 d-flex flex-column justify-content-between">
+            <div>
+              <div class="d-flex justify-content-between mb-3">
+                <small><i class="fa fa-map-marker-alt text-primary mr-2"></i>Mirador de Taquiscancha</small>
+                <small><i class="fa fa-calendar-alt text-primary mr-2"></i>Medio día</small>
+                <small><i class="fa fa-user text-primary mr-2"></i>4 personas</small>
+              </div>
+              <a class="h5 text-decoration-none d-block mb-3" href="#">Admira las vistas panorámicas del valle del Mantaro y disfruta del aire puro de los Andes.</a>
+            </div>
+            <div>
+              <div class="border-top mt-3 pt-3 d-flex justify-content-between align-items-center">
+                <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.9 <small>(250)</small></h6>
+                <h5 class="m-0">S/95</h5>
+              </div>
+              <div class="text-center mt-3">
+                <a href="#" class="btn btn-primary px-4">Reservar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2. Cañón de Shujto -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="package-item bg-white shadow-sm h-100 d-flex flex-column justify-content-between rounded-3 overflow-hidden">
+          <img class="img-fluid" src="img2/cañondeshujto.jpg" alt="Cañón de Shujto" style="height: 220px; object-fit: cover;">
+          <div class="p-4 flex-grow-1 d-flex flex-column justify-content-between">
+            <div>
+              <div class="d-flex justify-content-between mb-3">
+                <small><i class="fa fa-map-marker-alt text-primary mr-2"></i>Cañón de Shujto</small>
+                <small><i class="fa fa-calendar-alt text-primary mr-2"></i>1 día</small>
+                <small><i class="fa fa-user text-primary mr-2"></i>5 personas</small>
+              </div>
+              <a class="h5 text-decoration-none d-block mb-3" href="#">Explora sus imponentes paredes de piedra, ideales para senderismo y fotografía natural.</a>
+            </div>
+            <div>
+              <div class="border-top mt-3 pt-3 d-flex justify-content-between align-items-center">
+                <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.8 <small>(300)</small></h6>
+                <h5 class="m-0">S/130</h5>
+              </div>
+              <div class="text-center mt-3">
+                <a href="#" class="btn btn-primary px-4">Reservar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3. Virgen de Sapallanga -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="package-item bg-white shadow-sm h-100 d-flex flex-column justify-content-between rounded-3 overflow-hidden">
+          <img class="img-fluid" src="img2/virgendesapalllanga.jpg" alt="Virgen de Sapallanga" style="height: 220px; object-fit: cover;">
+          <div class="p-4 flex-grow-1 d-flex flex-column justify-content-between">
+            <div>
+              <div class="d-flex justify-content-between mb-3">
+                <small><i class="fa fa-map-marker-alt text-primary mr-2"></i>Virgen de Sapallanga</small>
+                <small><i class="fa fa-calendar-alt text-primary mr-2"></i>Medio día</small>
+                <small><i class="fa fa-user text-primary mr-2"></i>3 personas</small>
+              </div>
+              <a class="h5 text-decoration-none d-block mb-3" href="#">Visita el santuario de la Virgen de Sapallanga, símbolo de fe y devoción en el valle del Mantaro.</a>
+            </div>
+            <div>
+              <div class="border-top mt-3 pt-3 d-flex justify-content-between align-items-center">
+                <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.7 <small>(210)</small></h6>
+                <h5 class="m-0">S/70</h5>
+              </div>
+              <div class="text-center mt-3">
+                <a href="#" class="btn btn-primary px-4">Reservar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4. Catarata Huamanguaci -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="package-item bg-white shadow-sm h-100 d-flex flex-column justify-content-between rounded-3 overflow-hidden">
+          <img class="img-fluid" src="img2/cataratahuamanwasi.jpeg" alt="Catarata Huamanguaci" style="height: 220px; object-fit: cover;">
+          <div class="p-4 flex-grow-1 d-flex flex-column justify-content-between">
+            <div>
+              <div class="d-flex justify-content-between mb-3">
+                <small><i class="fa fa-map-marker-alt text-primary mr-2"></i>Catarata Huamanguaci</small>
+                <small><i class="fa fa-calendar-alt text-primary mr-2"></i>1 día</small>
+                <small><i class="fa fa-user text-primary mr-2"></i>4 personas</small>
+              </div>
+              <a class="h5 text-decoration-none d-block mb-3" href="#">Una joya natural escondida entre montañas, perfecta para quienes buscan aventura y conexión con la naturaleza.</a>
+            </div>
+            <div>
+              <div class="border-top mt-3 pt-3 d-flex justify-content-between align-items-center">
+                <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.9 <small>(180)</small></h6>
+                <h5 class="m-0">S/120</h5>
+              </div>
+              <div class="text-center mt-3">
+                <a href="#" class="btn btn-primary px-4">Reservar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5. Caverna de Wallicoto -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="package-item bg-white shadow-sm h-100 d-flex flex-column justify-content-between rounded-3 overflow-hidden">
+          <img class="img-fluid" src="img2/cavernawallicoto.jpg" alt="Caverna de Wallicoto" style="height: 220px; object-fit: cover;">
+          <div class="p-4 flex-grow-1 d-flex flex-column justify-content-between">
+            <div>
+              <div class="d-flex justify-content-between mb-3">
+                <small><i class="fa fa-map-marker-alt text-primary mr-2"></i>Caverna de Wallicoto</small>
+                <small><i class="fa fa-calendar-alt text-primary mr-2"></i>1 día</small>
+                <small><i class="fa fa-user text-primary mr-2"></i>6 personas</small>
+              </div>
+              <a class="h5 text-decoration-none d-block mb-3" href="#">Explora las cavernas misteriosas de Wallicoto y sus formaciones rocosas milenarias bajo tierra.</a>
+            </div>
+            <div>
+              <div class="border-top mt-3 pt-3 d-flex justify-content-between align-items-center">
+                <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.8 <small>(190)</small></h6>
+                <h5 class="m-0">S/140</h5>
+              </div>
+              <div class="text-center mt-3">
+                <a href="#" class="btn btn-primary px-4">Reservar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 6. Cullpa Alta - Cara de Hombre -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="package-item bg-white shadow-sm h-100 d-flex flex-column justify-content-between rounded-3 overflow-hidden">
+          <img class="img-fluid" src="img2/caradehombre.jpg" alt="Cullpa Alta - Cara de Hombre" style="height: 220px; object-fit: cover;">
+          <div class="p-4 flex-grow-1 d-flex flex-column justify-content-between">
+            <div>
+              <div class="d-flex justify-content-between mb-3">
+                <small><i class="fa fa-map-marker-alt text-primary mr-2"></i>Cullpa Alta - Cara de Hombre</small>
+                <small><i class="fa fa-calendar-alt text-primary mr-2"></i>Medio día</small>
+                <small><i class="fa fa-user text-primary mr-2"></i>4 personas</small>
+              </div>
+              <a class="h5 text-decoration-none d-block mb-3" href="#">Conoce la enigmática formación rocosa con forma de rostro humano y descubre sus leyendas locales.</a>
+            </div>
+            <div>
+              <div class="border-top mt-3 pt-3 d-flex justify-content-between align-items-center">
+                <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.9 <small>(270)</small></h6>
+                <h5 class="m-0">S/100</h5>
+              </div>
+              <div class="text-center mt-3">
+                <a href="#" class="btn btn-primary px-4">Reservar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
 </div>
 <!-- Packages End -->
+
+
 
 
 
@@ -556,7 +609,7 @@
             <div class="col-lg-7 mb-5 mb-lg-0">
                 <div class="mb-4">
                     <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Promoción Especial</h6>
-                    <h1 class="text-white"><span class="text-primary">30% de Descuento</span> en tu Primera Aventura</h1>
+                    <h1 class="text-white"><span class="text-primary">20% de Descuento</span> en tu Primera Aventura</h1>
                 </div>
                 <p class="text-white">
                     Vive la magia de Huancayo con nuestros paquetes exclusivos. Descubre paisajes únicos, cultura viva y experiencias inolvidables con guías locales que harán de tu viaje algo especial.
@@ -572,7 +625,7 @@
             <div class="col-lg-5">
                 <div class="card border-0">
                     <div class="card-header bg-primary text-center p-4">
-                        <h1 class="text-white m-0">Reserva tu Tour</h1>
+                        <h1 class="text-white m-0">Cotiza Aquí</h1>
                     </div>
                     <div class="card-body rounded-bottom bg-white p-5">
                         <form>
@@ -585,11 +638,12 @@
                             <div class="form-group">
                                 <select class="custom-select px-4" style="height: 47px;">
                                     <option selected>Selecciona un destino</option>
-                                    <option value="1">Nevado Huaytapallana</option>
-                                    <option value="2">Torre Torre</option>
-                                    <option value="3">Ingenio</option>
-                                    <option value="4">Warivilca</option>
-                                    <option value="5">Cochas Chico</option>
+                                    <option value="1">Mirador de Taquiscancha</option>
+                                    <option value="2">Cañón de Shujto</option>
+                                    <option value="3">Caverna de Wallicoto</option>
+                                    <option value="4">Catarata Canta Gallo</option>
+                                    <option value="5">Carhuapacha</option>
+                                    <option value="6">Cullpa Alta (Cara de Hombre)</option>
                                 </select>
                             </div>
                             <div>
@@ -603,6 +657,7 @@
     </div>
 </div>
 <!-- Registro / Promoción End -->
+
 
 
 <!-- Team Start -->
@@ -666,7 +721,7 @@
           </div>
           <div class="text-center py-4">
             <h5 class="text-truncate">Julio Rojas</h5>
-            <p class="m-0">Guía Gastronómico y Tradicional</p>
+            <p class="m-0">Guía Gastronómico</p>
           </div>
         </div>
       </div>
@@ -759,14 +814,14 @@
         </div>
         <div class="row pb-3">
 
-            <!-- Post 1 -->
+            <!-- Post 1: Mirador de Taquiscancha -->
             <div class="col-lg-4 col-md-6 mb-4 pb-2">
                 <div class="blog-item">
                     <div class="position-relative">
-                        <img class="img-fluid blog-img" src="img2/cerrodelalibertad.jpg" alt="Cerro de la Libertad Huancayo">
+                        <img class="img-fluid blog-img" src="img2/Mirador.jpg" alt="Mirador de Taquiscancha">
                         <div class="blog-date">
-                            <h6 class="font-weight-bold mb-n1">10</h6>
-                            <small class="text-white text-uppercase">Oct</small>
+                            <h6 class="font-weight-bold mb-n1">12</h6>
+                            <small class="text-white text-uppercase">Ago</small>
                         </div>
                     </div>
                     <div class="bg-white p-4">
@@ -776,42 +831,19 @@
                             <a class="text-primary text-uppercase text-decoration-none" href="">Aventura</a>
                         </div>
                         <a class="h5 m-0 text-decoration-none" href="#">
-                            Ascenso al Cerro de la Libertad: la mejor vista de Huancayo al amanecer
+                            Mirador de Taquiscancha: vistas únicas del Valle del Mantaro
                         </a>
                     </div>
                 </div>
             </div>
 
-            <!-- Post 2 -->
+            <!-- Post 2: Cañón de Shujto -->
             <div class="col-lg-4 col-md-6 mb-4 pb-2">
                 <div class="blog-item">
                     <div class="position-relative">
-                        <img class="img-fluid blog-img" src="img2/feriadominical.jpg" alt="Feria dominical de Huancayo">
+                        <img class="img-fluid blog-img" src="img2/cañondeshujto.jpg" alt="Cañón de Shujto">
                         <div class="blog-date">
-                            <h6 class="font-weight-bold mb-n1">03</h6>
-                            <small class="text-white text-uppercase">Sep</small>
-                        </div>
-                    </div>
-                    <div class="bg-white p-4">
-                        <div class="d-flex mb-2">
-                            <a class="text-primary text-uppercase text-decoration-none" href="">Admin</a>
-                            <span class="text-primary px-2">|</span>
-                            <a class="text-primary text-uppercase text-decoration-none" href="">Cultura</a>
-                        </div>
-                        <a class="h5 m-0 text-decoration-none" href="#">
-                            La Feria Dominical: colores, sabores y tradiciones del Valle del Mantaro
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Post 3 -->
-            <div class="col-lg-4 col-md-6 mb-4 pb-2">
-                <div class="blog-item">
-                    <div class="position-relative">
-                        <img class="img-fluid blog-img" src="img2/cataratatirol.jpg" alt="Catarata de Tirol">
-                        <div class="blog-date">
-                            <h6 class="font-weight-bold mb-n1">25</h6>
+                            <h6 class="font-weight-bold mb-n1">20</h6>
                             <small class="text-white text-uppercase">Ago</small>
                         </div>
                     </div>
@@ -822,7 +854,30 @@
                             <a class="text-primary text-uppercase text-decoration-none" href="">Naturaleza</a>
                         </div>
                         <a class="h5 m-0 text-decoration-none" href="#">
-                            Aventúrate a la Catarata de Tirol: un paraíso escondido en San Ramón
+                            Cañón de Shujto: una maravilla natural entre montañas
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Post 3: Caverna de Wallicoto -->
+            <div class="col-lg-4 col-md-6 mb-4 pb-2">
+                <div class="blog-item">
+                    <div class="position-relative">
+                        <img class="img-fluid blog-img" src="img2/cavernawallicoto.jpg" alt="Caverna de Wallicoto">
+                        <div class="blog-date">
+                            <h6 class="font-weight-bold mb-n1">28</h6>
+                            <small class="text-white text-uppercase">Ago</small>
+                        </div>
+                    </div>
+                    <div class="bg-white p-4">
+                        <div class="d-flex mb-2">
+                            <a class="text-primary text-uppercase text-decoration-none" href="">Admin</a>
+                            <span class="text-primary px-2">|</span>
+                            <a class="text-primary text-uppercase text-decoration-none" href="">Exploración</a>
+                        </div>
+                        <a class="h5 m-0 text-decoration-none" href="#">
+                            Caverna de Wallicoto: explora los misterios bajo tierra
                         </a>
                     </div>
                 </div>
