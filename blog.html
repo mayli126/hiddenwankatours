@@ -26,6 +26,10 @@
     <link href="css/style.css" rel="stylesheet">
 </head>
 
+<style>
+    
+</style>
+
 <body>
 <!-- Topbar Start -->
 <div class="container-fluid bg-light pt-3 d-none d-lg-block">
@@ -98,7 +102,7 @@
                             <div class="dropdown-menu border-0 rounded-0 m-0">
                                 <a href="blog.html" class="dropdown-item active" >Blog Grid</a>
                            
-                                <a href="destination.html" class="dropdown-item">Destination</a>
+                                <!-- <a href="destination.html" class="dropdown-item">Destination</a> -->
                             </div>
                         </div>
                         <a href="contact.html" class="nav-item nav-link">Conacto</a>
@@ -127,7 +131,7 @@
 
 
     <!-- Booking Start -->
-    <div class="container-fluid booking mt-5 pb-5">
+    <!-- <div class="container-fluid booking mt-5 pb-5">
         <div class="container pb-5">
             <div class="bg-light shadow" style="padding: 30px;">
                 <div class="row align-items-center" style="min-height: 60px;">
@@ -175,7 +179,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- Booking End -->
 
 
@@ -183,130 +187,144 @@
 <div class="container-fluid py-5">
     <div class="container py-5">
         <div class="row">
+            <!-- Contenido principal del blog -->
             <div class="col-lg-8">
                 <div class="row pb-3">
-                    <!-- Publicación 1 -->
+
+                    <!-- Publicación: Mirador de Taquiscancha -->
                     <div class="col-md-6 mb-4 pb-2">
-                        <div class="blog-item">
+                        <div class="blog-item h-100 d-flex flex-column">
                             <div class="position-relative">
-                                <img class="img-fluid w-100" src="img/blog-1.jpg" alt="Tour Huaytapallana">
+                                <img class="img-fluid w-100" src="img2/Mirador.jpg" alt="Mirador de Taquiscancha" style="height: 230px; object-fit: cover;">
                                 <div class="blog-date">
                                     <h6 class="font-weight-bold mb-n1">12</h6>
                                     <small class="text-white text-uppercase">Ago</small>
                                 </div>
                             </div>
-                            <div class="bg-white p-4">
-                                <div class="d-flex mb-2">
-                                    <a class="text-primary text-uppercase text-decoration-none" href="">Admin</a>
-                                    <span class="text-primary px-2">|</span>
-                                    <a class="text-primary text-uppercase text-decoration-none" href="">Aventura</a>
+                            <div class="bg-white p-4 flex-grow-1 d-flex flex-column justify-content-between">
+                                <div>
+                                    <div class="d-flex mb-2">
+                                        <a class="text-primary text-uppercase text-decoration-none" href="#">Admin</a>
+                                        <span class="text-primary px-2">|</span>
+                                        <a class="text-primary text-uppercase text-decoration-none" href="#">Aventura</a>
+                                    </div>
+                                    <a class="h5 text-decoration-none" href="#">Mirador de Taquiscancha: vistas panorámicas del Valle del Mantaro</a>
                                 </div>
-                                <a class="h5 m-0 text-decoration-none" href="">Explora el nevado Huaytapallana: una experiencia mágica en la sierra central</a>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Publicación 2 -->
+                    <!-- Publicación: Cañón de Shujto -->
                     <div class="col-md-6 mb-4 pb-2">
-                        <div class="blog-item">
+                        <div class="blog-item h-100 d-flex flex-column">
                             <div class="position-relative">
-                                <img class="img-fluid w-100" src="img/blog-2.jpg" alt="Tour Valle del Mantaro">
+                                <img class="img-fluid w-100" src="img2/cañondeshujto.jpg" alt="Cañón de Shujto" style="height: 230px; object-fit: cover;">
+                                <div class="blog-date">
+                                    <h6 class="font-weight-bold mb-n1">20</h6>
+                                    <small class="text-white text-uppercase">Ago</small>
+                                </div>
+                            </div>
+                            <div class="bg-white p-4 flex-grow-1 d-flex flex-column justify-content-between">
+                                <div>
+                                    <div class="d-flex mb-2">
+                                        <a class="text-primary text-uppercase text-decoration-none" href="#">Admin</a>
+                                        <span class="text-primary px-2">|</span>
+                                        <a class="text-primary text-uppercase text-decoration-none" href="#">Naturaleza</a>
+                                    </div>
+                                    <a class="h5 text-decoration-none" href="#">Descubre el Cañón de Shujto: formaciones rocosas y senderos ocultos</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Publicación: Caverna de Wallicoto -->
+                    <div class="col-md-6 mb-4 pb-2">
+                        <div class="blog-item h-100 d-flex flex-column">
+                            <div class="position-relative">
+                                <img class="img-fluid w-100" src="img2/cavernawallicoto.jpg" alt="Caverna de Wallicoto" style="height: 230px; object-fit: cover;">
+                                <div class="blog-date">
+                                    <h6 class="font-weight-bold mb-n1">28</h6>
+                                    <small class="text-white text-uppercase">Ago</small>
+                                </div>
+                            </div>
+                            <div class="bg-white p-4 flex-grow-1 d-flex flex-column justify-content-between">
+                                <div>
+                                    <div class="d-flex mb-2">
+                                        <a class="text-primary text-uppercase text-decoration-none" href="#">Admin</a>
+                                        <span class="text-primary px-2">|</span>
+                                        <a class="text-primary text-uppercase text-decoration-none" href="#">Exploración</a>
+                                    </div>
+                                    <a class="h5 text-decoration-none" href="#">Caverna de Wallicoto: un misterio subterráneo en el corazón de Huancayo</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Publicación: Catarata Canta Gallo -->
+                    <div class="col-md-6 mb-4 pb-2">
+                        <div class="blog-item h-100 d-flex flex-column">
+                            <div class="position-relative">
+                                <img class="img-fluid w-100" src="img2/cataratagallo.jpg" alt="Catarata Canta Gallo" style="height: 230px; object-fit: cover;">
                                 <div class="blog-date">
                                     <h6 class="font-weight-bold mb-n1">05</h6>
                                     <small class="text-white text-uppercase">Sep</small>
                                 </div>
                             </div>
-                            <div class="bg-white p-4">
-                                <div class="d-flex mb-2">
-                                    <a class="text-primary text-uppercase text-decoration-none" href="">Admin</a>
-                                    <span class="text-primary px-2">|</span>
-                                    <a class="text-primary text-uppercase text-decoration-none" href="">Cultura</a>
+                            <div class="bg-white p-4 flex-grow-1 d-flex flex-column justify-content-between">
+                                <div>
+                                    <div class="d-flex mb-2">
+                                        <a class="text-primary text-uppercase text-decoration-none" href="#">Admin</a>
+                                        <span class="text-primary px-2">|</span>
+                                        <a class="text-primary text-uppercase text-decoration-none" href="#">Aventura</a>
+                                    </div>
+                                    <a class="h5 text-decoration-none" href="#">Catarata Canta Gallo: una joya natural escondida entre montañas</a>
                                 </div>
-                                <a class="h5 m-0 text-decoration-none" href="">Descubre los encantos del Valle del Mantaro y su riqueza cultural</a>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Publicación 3 -->
+                    <!-- Publicación: Carhuapacha -->
                     <div class="col-md-6 mb-4 pb-2">
-                        <div class="blog-item">
+                        <div class="blog-item h-100 d-flex flex-column">
                             <div class="position-relative">
-                                <img class="img-fluid w-100" src="img/blog-3.jpg" alt="Gastronomía Andina">
+                                <img class="img-fluid w-100" src="img2/carhuapccha.jpg" alt="Carhuapacha" style="height: 230px; object-fit: cover;">
                                 <div class="blog-date">
-                                    <h6 class="font-weight-bold mb-n1">20</h6>
+                                    <h6 class="font-weight-bold mb-n1">12</h6>
                                     <small class="text-white text-uppercase">Sep</small>
                                 </div>
                             </div>
-                            <div class="bg-white p-4">
-                                <div class="d-flex mb-2">
-                                    <a class="text-primary text-uppercase text-decoration-none" href="">Admin</a>
-                                    <span class="text-primary px-2">|</span>
-                                    <a class="text-primary text-uppercase text-decoration-none" href="">Gastronomía</a>
+                            <div class="bg-white p-4 flex-grow-1 d-flex flex-column justify-content-between">
+                                <div>
+                                    <div class="d-flex mb-2">
+                                        <a class="text-primary text-uppercase text-decoration-none" href="#">Admin</a>
+                                        <span class="text-primary px-2">|</span>
+                                        <a class="text-primary text-uppercase text-decoration-none" href="#">Cultura</a>
+                                    </div>
+                                    <a class="h5 text-decoration-none" href="#">Carhuapacha: un paraíso de tradiciones y paisajes en la sierra central</a>
                                 </div>
-                                <a class="h5 m-0 text-decoration-none" href="">Sabores del Ande: los mejores platos típicos de Huancayo</a>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Publicación 4 -->
+                    <!-- Publicación: Cullpa Alta -->
                     <div class="col-md-6 mb-4 pb-2">
-                        <div class="blog-item">
+                        <div class="blog-item h-100 d-flex flex-column">
                             <div class="position-relative">
-                                <img class="img-fluid w-100" src="img/blog-4.jpg" alt="Ruta de los conventos">
+                                <img class="img-fluid w-100" src="img2/caradehombre.jpg" alt="Cullpa Alta Cara de Hombre" style="height: 230px; object-fit: cover;">
                                 <div class="blog-date">
-                                    <h6 class="font-weight-bold mb-n1">02</h6>
-                                    <small class="text-white text-uppercase">Oct</small>
+                                    <h6 class="font-weight-bold mb-n1">18</h6>
+                                    <small class="text-white text-uppercase">Sep</small>
                                 </div>
                             </div>
-                            <div class="bg-white p-4">
-                                <div class="d-flex mb-2">
-                                    <a class="text-primary text-uppercase text-decoration-none" href="">Admin</a>
-                                    <span class="text-primary px-2">|</span>
-                                    <a class="text-primary text-uppercase text-decoration-none" href="">Turismo Religioso</a>
+                            <div class="bg-white p-4 flex-grow-1 d-flex flex-column justify-content-between">
+                                <div>
+                                    <div class="d-flex mb-2">
+                                        <a class="text-primary text-uppercase text-decoration-none" href="#">Admin</a>
+                                        <span class="text-primary px-2">|</span>
+                                        <a class="text-primary text-uppercase text-decoration-none" href="#">Turismo</a>
+                                    </div>
+                                    <a class="h5 text-decoration-none" href="#">Cullpa Alta: la enigmática “Cara de Hombre” tallada por la naturaleza</a>
                                 </div>
-                                <a class="h5 m-0 text-decoration-none" href="">Ruta de los conventos: historia y fe en el corazón del Valle</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Publicación 5 -->
-                    <div class="col-md-6 mb-4 pb-2">
-                        <div class="blog-item">
-                            <div class="position-relative">
-                                <img class="img-fluid w-100" src="img/blog-5.jpg" alt="Tour Chanchamayo">
-                                <div class="blog-date">
-                                    <h6 class="font-weight-bold mb-n1">10</h6>
-                                    <small class="text-white text-uppercase">Oct</small>
-                                </div>
-                            </div>
-                            <div class="bg-white p-4">
-                                <div class="d-flex mb-2">
-                                    <a class="text-primary text-uppercase text-decoration-none" href="">Admin</a>
-                                    <span class="text-primary px-2">|</span>
-                                    <a class="text-primary text-uppercase text-decoration-none" href="">Naturaleza</a>
-                                </div>
-                                <a class="h5 m-0 text-decoration-none" href="">Aventura en Chanchamayo: selva, cascadas y café orgánico</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Publicación 6 -->
-                    <div class="col-md-6 mb-4 pb-2">
-                        <div class="blog-item">
-                            <div class="position-relative">
-                                <img class="img-fluid w-100" src="img/blog-6.jpg" alt="Tips de viaje">
-                                <div class="blog-date">
-                                    <h6 class="font-weight-bold mb-n1">15</h6>
-                                    <small class="text-white text-uppercase">Oct</small>
-                                </div>
-                            </div>
-                            <div class="bg-white p-4">
-                                <div class="d-flex mb-2">
-                                    <a class="text-primary text-uppercase text-decoration-none" href="">Admin</a>
-                                    <span class="text-primary px-2">|</span>
-                                    <a class="text-primary text-uppercase text-decoration-none" href="">Consejos</a>
-                                </div>
-                                <a class="h5 m-0 text-decoration-none" href="">Consejos para tu primer viaje a la sierra central del Perú</a>
                             </div>
                         </div>
                     </div>
@@ -316,114 +334,78 @@
                         <nav aria-label="Page navigation">
                             <ul class="pagination pagination-lg justify-content-center bg-white mb-0" style="padding: 30px;">
                                 <li class="page-item disabled">
-                                    <a class="page-link" href="#" aria-label="Previous">
-                                        <span aria-hidden="true">&laquo;</span>
-                                        <span class="sr-only">Previous</span>
-                                    </a>
+                                    <a class="page-link" href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a>
                                 </li>
                                 <li class="page-item active"><a class="page-link" href="#">1</a></li>
                                 <li class="page-item"><a class="page-link" href="#">2</a></li>
                                 <li class="page-item"><a class="page-link" href="#">3</a></li>
                                 <li class="page-item">
-                                    <a class="page-link" href="#" aria-label="Next">
-                                        <span aria-hidden="true">&raquo;</span>
-                                        <span class="sr-only">Next</span>
-                                    </a>
+                                    <a class="page-link" href="#" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
                                 </li>
                             </ul>
                         </nav>
                     </div>
+
                 </div>
             </div>
 
-            <!-- Sidebar -->
+            <!-- Sidebar derecho -->
             <div class="col-lg-4 mt-5 mt-lg-0">
-                <!-- Autor -->
-                <div class="d-flex flex-column text-center bg-white mb-5 py-5 px-4">
-                    <img src="img/user.jpg" class="img-fluid mx-auto mb-3" style="width: 100px;">
-                    <h3 class="text-primary mb-3">Equipo Hidden Wanka Tours</h3>
-                    <p>Apasionados por el turismo responsable y la cultura andina. Te invitamos a descubrir lo mejor del Valle del Mantaro con nosotros.</p>
-                    <div class="d-flex justify-content-center">
-                        <a class="text-primary px-2" href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a class="text-primary px-2" href="#"><i class="fab fa-instagram"></i></a>
-                        <a class="text-primary px-2" href="#"><i class="fab fa-tiktok"></i></a>
-                        <a class="text-primary px-2" href="#"><i class="fab fa-whatsapp"></i></a>
-                    </div>
-                </div>
-
-                <!-- Buscador -->
+                <!-- Buscar -->
                 <div class="mb-5">
-                    <div class="bg-white" style="padding: 30px;">
+                    <form action="">
                         <div class="input-group">
-                            <input type="text" class="form-control p-4" placeholder="Buscar...">
+                            <input type="text" class="form-control p-4" placeholder="Buscar destino...">
                             <div class="input-group-append">
-                                <span class="input-group-text bg-primary border-primary text-white"><i class="fa fa-search"></i></span>
+                                <button class="btn btn-primary px-4"><i class="fa fa-search"></i></button>
                             </div>
                         </div>
-                    </div>
+                    </form>
                 </div>
 
                 <!-- Categorías -->
                 <div class="mb-5">
                     <h4 class="text-uppercase mb-4" style="letter-spacing: 5px;">Categorías</h4>
                     <div class="bg-white" style="padding: 30px;">
-                        <ul class="list-inline m-0">
-                            <li class="mb-3 d-flex justify-content-between align-items-center">
-                                <a class="text-dark" href="#"><i class="fa fa-angle-right text-primary mr-2"></i>Tours de Aventura</a>
-                                <span class="badge badge-primary badge-pill">24</span>
-                            </li>
-                            <li class="mb-3 d-flex justify-content-between align-items-center">
-                                <a class="text-dark" href="#"><i class="fa fa-angle-right text-primary mr-2"></i>Cultura y Tradición</a>
-                                <span class="badge badge-primary badge-pill">18</span>
-                            </li>
-                            <li class="mb-3 d-flex justify-content-between align-items-center">
-                                <a class="text-dark" href="#"><i class="fa fa-angle-right text-primary mr-2"></i>Gastronomía</a>
-                                <span class="badge badge-primary badge-pill">12</span>
-                            </li>
-                            <li class="d-flex justify-content-between align-items-center">
-                                <a class="text-dark" href="#"><i class="fa fa-angle-right text-primary mr-2"></i>Consejos de Viaje</a>
-                                <span class="badge badge-primary badge-pill">9</span>
-                            </li>
+                        <ul class="list-unstyled mb-0">
+                            <li class="py-2 border-bottom"><a href="#"><i class="fa fa-angle-right text-primary mr-2"></i>Aventura</a></li>
+                            <li class="py-2 border-bottom"><a href="#"><i class="fa fa-angle-right text-primary mr-2"></i>Naturaleza</a></li>
+                            <li class="py-2 border-bottom"><a href="#"><i class="fa fa-angle-right text-primary mr-2"></i>Exploración</a></li>
+                            <li class="py-2 border-bottom"><a href="#"><i class="fa fa-angle-right text-primary mr-2"></i>Cultura</a></li>
+                            <li class="py-2"><a href="#"><i class="fa fa-angle-right text-primary mr-2"></i>Turismo</a></li>
                         </ul>
                     </div>
                 </div>
 
                 <!-- Publicaciones recientes -->
                 <div class="mb-5">
-                    <h4 class="text-uppercase mb-4" style="letter-spacing: 5px;">Últimos Posts</h4>
-                    <a class="d-flex align-items-center text-decoration-none bg-white mb-3" href="">
-                        <img class="img-fluid" src="img/blog-100x100.jpg" alt="">
-                        <div class="pl-3">
-                            <h6 class="m-1">10 lugares imperdibles para visitar en Huancayo</h6>
-                            <small>Oct 10, 2025</small>
-                        </div>
-                    </a>
-                    <a class="d-flex align-items-center text-decoration-none bg-white mb-3" href="">
-                        <img class="img-fluid" src="img/blog-100x100.jpg" alt="">
-                        <div class="pl-3">
-                            <h6 class="m-1">Cómo preparar tu viaje al Valle del Mantaro</h6>
-                            <small>Oct 05, 2025</small>
-                        </div>
-                    </a>
-                    <a class="d-flex align-items-center text-decoration-none bg-white mb-3" href="">
-                        <img class="img-fluid" src="img/blog-100x100.jpg" alt="">
-                        <div class="pl-3">
-                            <h6 class="m-1">Las mejores épocas para viajar a la sierra central</h6>
-                            <small>Sep 25, 2025</small>
-                        </div>
-                    </a>
+                    <h4 class="text-uppercase mb-4" style="letter-spacing: 5px;">Recientes</h4>
+                    <div class="bg-white" style="padding: 30px;">
+                        <a class="d-flex align-items-center text-decoration-none mb-3" href="#">
+                            <img class="img-fluid" src="img2/cataratahuamanwasi.jpeg" alt="Huamanguaci" style="width: 80px; height: 80px; object-fit: cover;">
+                            <div class="pl-3">
+                                <h6 class="m-1">Catarata Huamanguaci</h6>
+                                <small>Oct 5, 2025</small>
+                            </div>
+                        </a>
+                        <a class="d-flex align-items-center text-decoration-none mb-3" href="#">
+                            <img class="img-fluid" src="img2/virgendesapalllanga.jpg" alt="Virgen de Sapallanga" style="width: 80px; height: 80px; object-fit: cover;">
+                            <div class="pl-3">
+                                <h6 class="m-1">Virgen de Sapallanga</h6>
+                                <small>Sep 29, 2025</small>
+                            </div>
+                        </a>
+                    </div>
                 </div>
 
-                <!-- Etiquetas -->
+                <!-- Redes Sociales -->
                 <div class="mb-5">
-                    <h4 class="text-uppercase mb-4" style="letter-spacing: 5px;">Temas Populares</h4>
-                    <div class="d-flex flex-wrap m-n1">
-                        <a href="#" class="btn btn-light m-1">Huancayo</a>
-                        <a href="#" class="btn btn-light m-1">Aventura</a>
-                        <a href="#" class="btn btn-light m-1">Cultura</a>
-                        <a href="#" class="btn btn-light m-1">Naturaleza</a>
-                        <a href="#" class="btn btn-light m-1">Gastronomía</a>
-                        <a href="#" class="btn btn-light m-1">Viajes</a>
+                    <h4 class="text-uppercase mb-4" style="letter-spacing: 5px;">Síguenos</h4>
+                    <div class="d-flex justify-content-start">
+                        <a class="btn btn-outline-primary mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-primary mr-2" href="#"><i class="fab fa-instagram"></i></a>
+                        <a class="btn btn-outline-primary mr-2" href="#"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-primary" href="#"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
             </div>
@@ -431,6 +413,8 @@
     </div>
 </div>
 <!-- Blog End -->
+
+
 
 
 
